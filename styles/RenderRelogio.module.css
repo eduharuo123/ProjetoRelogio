@@ -1,0 +1,106 @@
+
+
+.relogio{
+    font-family: sans-serif;
+    color: black;
+    background-color: #ffebcd;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.numb{
+    position: absolute;
+    font-size: 25px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.num1{
+    transform: rotate(30deg);
+}
+.num2{
+    transform: rotate(60deg);
+}
+.num3{
+    transform: rotate(90deg);
+}
+.num4{
+    transform: rotate(120deg);
+}
+.num5{
+    transform: rotate(150deg);
+}
+.num6{
+    transform: rotate(180deg);
+}
+.num7{
+    transform: rotate(210deg);
+}
+.num8{
+    transform: rotate(240deg);
+}
+.num9{
+    transform: rotate(270deg);
+}
+.num10{
+    transform: rotate(300deg);
+}
+.num11{
+    transform: rotate(330deg);
+}
+
+.centro{
+    display:block;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.minutos{
+    
+    width: 15px;
+    height: 160px;
+    background-color: rgba(0, 0, 0, 0.411);
+    top: 40px;
+    position: absolute;
+    transform-origin: bottom;    
+    border-radius: 60px 60px 0 0;
+    transform: rotate(var(--ang));
+}
+.horas{
+    width: 15px;
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.671);
+    top: 85px;
+    position: absolute;
+    transform-origin: bottom;    
+    border-radius: 60px 60px 0 0;
+    transform: rotate(var(--ang));
+    
+}
+
+.segundos{
+    width: 10px;
+    height: 190px;
+    background-color: rgba(0, 0, 0, 0.884);
+    top: 5px;
+    position: absolute;
+    transform-origin: bottom;    
+    border-radius: 60px 60px 0 0;
+    transform: rotate(var(--ang));
+}
+
+.display{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(66, 186, 207);
+}
+
+

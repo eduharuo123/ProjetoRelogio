@@ -1,0 +1,33 @@
+.container {
+  background-color: #373d3d;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.relogioContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botoes{
+  display: flex;
+  flex-direction:row;
+  
+}
+
+.btnFuso{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+  color: rgb(66, 186, 207);
+}
+
+
+
+
+
