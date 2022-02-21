@@ -36,9 +36,7 @@ export default function Home() {
     
   }
 
-  function setarRelogio(){
 
-  }
   
 
   return (

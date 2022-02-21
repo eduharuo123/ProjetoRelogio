@@ -8,6 +8,13 @@ export default function RelogioBrasilia(){
     const [angH, setAngH] = useState(0);
     const [angM, setAngM] = useState(0);
     const [angS, setAngS] = useState(0);
+
+    function horario(variacao){
+        const Horario = new Date()
+        const utc = Horario.getTime()+(Horario.getTimezoneOffset()*60000)
+        const HorarioAjustado = new Date(utc+(3600000*variacao))
+        return HorarioAjustado
+    }
  
 
 
@@ -16,7 +23,7 @@ export default function RelogioBrasilia(){
   
         useEffect(() => {
             const intervalo = setInterval(() =>{
-                const HorarioAtual = new Date()
+                const HorarioAtual = horario(-3)
                 const horasAtual = HorarioAtual.getHours() 
                 setH(horasAtual)
                 const minutosAtual = HorarioAtual.getMinutes()
